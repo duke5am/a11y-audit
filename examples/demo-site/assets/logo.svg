@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="56" viewBox="0 0 240 56" role="img" aria-label="Northwind Widgets">
+  <rect width="240" height="56" rx="8" fill="#0d2b45"/>
+  <circle cx="30" cy="28" r="14" fill="#3fa7d6"/>
+  <rect x="24" y="22" width="12" height="12" fill="#0d2b45"/>
+  <text x="54" y="35" font-family="system-ui, sans-serif" font-size="20" fill="#ffffff">Northwind</text>
+</svg>

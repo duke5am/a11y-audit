@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News - Northwind Widgets</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- DELIBERATE DEFECTS ON THIS PAGE:
+     1. <iframe> with no title                    -> frame-title
+     2. article headings jump h2 -> h5            -> heading-order
+     3. a "read more" link whose accessible name
+        is the same for four different articles   -> MANUAL CHECK (not a violation)
+-->
+<nav class="topbar" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="services.html">Services</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>News</h1>
+
+  <h2>August 2026</h2>
+  <article class="card">
+    <h5>Shortage of 6204 bearings eases</h5>
+    <p class="muted">Lead times are back to two weeks for the first time since 2024.</p>
+    <p><a href="news.html">Read more</a></p>
+  </article>
+
+  <article class="card">
+    <h5>New linear guide range in stock</h5>
+    <p>HGR20 and HGR25 carriages are now held in Rotterdam.</p>
+    <p><a href="news.html">Read more</a></p>
+  </article>
+
+  <article class="card">
+    <h5>Warehouse extension finished</h5>
+    <p>An extra 900 m&sup2; of racking came online in July.</p>
+    <p><a href="news.html">Read more</a></p>
+  </article>
+
+  <h2>Trade fair</h2>
+  <p>We will be at the Rotterdam industrial fair in October. Stand 214.</p>
+  <iframe src="media.html" width="560" height="140"></iframe>
+</main>
+
+<footer>
+  <p>Northwind Widgets BV &middot; Waalhaven 42, Rotterdam</p>
+</footer>
+</body>
+</html>

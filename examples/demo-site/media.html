@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Product tour - Northwind Widgets</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- DELIBERATE DEFECTS ON THIS PAGE:
+     1. <video> with no <track kind="captions">   -> MANUAL CHECK (no axe rule can
+        know whether the audio needs captions)
+     2. second <iframe> also has no title          -> frame-title
+-->
+<nav class="topbar" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="services.html">Services</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Product tour</h1>
+  <p>A three-minute walk through the warehouse and the inspection bench.</p>
+
+  <video width="560" height="315" controls>
+    <source src="assets/warehouse.svg" type="image/svg+xml">
+    Your browser does not support embedded video.
+  </video>
+
+  <h2>Embedded catalogue</h2>
+  <iframe src="services.html" width="560" height="315" title="Catalogue excerpt"></iframe>
+
+  <h2>Inspection bench</h2>
+  <iframe src="about.html" width="560" height="315"></iframe>
+</main>
+
+<footer>
+  <p>Northwind Widgets BV &middot; Waalhaven 42, Rotterdam</p>
+</footer>
+</body>
+</html>

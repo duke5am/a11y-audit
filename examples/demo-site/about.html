@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-UK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Northwind Widgets</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- DELIBERATE DEFECTS ON THIS PAGE:
+     1. lang="en-UK" is not a valid BCP-47 primary subtag  -> html-lang-valid
+     2. <h1> then <h4> (skips levels)                       -> heading-order
+     3. decorative image with a long alt, and a meaningful
+        image with empty alt (axe cannot tell which is which) -> MANUAL CHECK
+-->
+<nav class="topbar" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="services.html">Services</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>About us</h1>
+  <p>Northwind Widgets was founded in 1998 by two toolmakers who were tired of waiting three weeks
+  for a bearing. We started with a single shelf in a shared unit on the Waalhaven and now run a
+  4,000 m&sup2; warehouse with 26 staff.</p>
+
+  <h4>How we work</h4>
+  <p>Every catalogue part has a named engineer behind it. If a drawing does not match the part you
+  receive, that engineer picks up the phone.</p>
+
+  <img src="assets/warehouse.svg" width="480" height="200"
+       alt="A photograph of the Northwind Widgets warehouse in Rotterdam, taken from the water side at dusk, showing the loading bay and the office windows on the first floor">
+  <img src="assets/warehouse.svg" width="480" height="200" alt="">
+
+  <h2>Certifications</h2>
+  <p>We are ISO 9001 certified. Our certificate number is available on request.</p>
+
+  <h2>Where we ship</h2>
+  <table>
+    <tr><th>Country</th><th>Lead time</th><th>Carrier</th></tr>
+    <tr><td>Netherlands</td><td>Next working day</td><td>PostNL</td></tr>
+    <tr><td>Belgium</td><td>1-2 working days</td><td>DPD</td></tr>
+    <tr><td>Germany</td><td>2-3 working days</td><td>DPD</td></tr>
+    <tr><td>Poland</td><td>3-4 working days</td><td>DPD</td></tr>
+  </table>
+
+  <p><a href="contact.html" class="btn-ghost">Contact the sales desk</a></p>
+</main>
+
+<footer>
+  <p>Northwind Widgets BV &middot; Waalhaven 42, Rotterdam</p>
+</footer>
+</body>
+</html>

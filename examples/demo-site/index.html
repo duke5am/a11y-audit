@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>Northwind Widgets - Industrial components from Rotterdam</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- DELIBERATE DEFECTS ON THIS PAGE (demo fixture, do not copy):
+     1. <html> has no lang attribute                    -> html-has-lang
+     2. viewport blocks zoom (user-scalable=no)         -> meta-viewport
+     3. logo <img> has no alt                           -> image-alt (and link-name)
+     4. page starts at <h3>, there is no <h1>           -> heading-order, page-has-heading-one
+     5. header/nav are <div>s, no landmarks             -> region
+     6. .muted text is #a9a9a9 on white                 -> color-contrast
+     7. "Terms" link is a 11px target                   -> target-size
+-->
+<div class="topbar">
+  <a href="index.html" class="brand"><img src="assets/logo.svg" width="168" height="39"></a>
+  <div class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About us</a>
+    <a href="services.html">Services</a>
+    <a href="news.html">News</a>
+    <a href="contact.html">Contact</a>
+    <a href="/redirect">Our accreditations</a>
+    <a href="media.html">Product tour</a>
+    <a href="/download.pdf">Price list (PDF)</a>
+    <a href="/broken">Customer portal</a>
+  </div>
+</div>
+
+<h3>Industrial widgets for European machine builders</h3>
+<p class="muted">Family-run since 1998. We ship to 14 countries from our Rotterdam warehouse.</p>
+
+<div class="card">
+  <p>Northwind Widgets supplies bearings, couplings and linear guides to machine builders across
+  the Benelux, Germany and Poland. Everything we sell is held in stock and dispatched the same day
+  if the order arrives before 15:00 CET.</p>
+  <p><a href="services.html" class="btn">See what we supply</a> &nbsp; <a href="link">Read our terms</a></p>
+</div>
+
+<img src="assets/warehouse.svg" width="480" height="200">
+
+<div class="grid">
+  <div class="card">
+    <h4>Same-day dispatch</h4>
+    <p>Orders before 15:00 CET leave the warehouse the same working day.</p>
+  </div>
+  <div class="card">
+    <h4>Technical drawings</h4>
+    <p>STEP and DXF files for every catalogue part, free of charge.</p>
+  </div>
+  <div class="card">
+    <h4>Two-year warranty</h4>
+    <p>Standard on all catalogue components, regardless of order size.</p>
+  </div>
+</div>
+
+<footer>
+  <p>Northwind Widgets BV &middot; Waalhaven 42, Rotterdam &middot; KVK 12345678</p>
+  <p><span class="tiny"><a href="contact.html">Terms</a></span></p>
+</footer>
+</body>
+</html>

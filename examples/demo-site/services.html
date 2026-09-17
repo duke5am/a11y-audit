@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services and pricing - Northwind Widgets</title>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<!-- DELIBERATE DEFECTS ON THIS PAGE:
+     1. two elements share id="spec-table"     -> duplicate-id-aria
+     2. <ul> whose children are <div>          -> list
+     3. <a> wrapping a <button>                -> nested-interactive
+     4. role="checkbox" with no aria-checked   -> aria-required-attr
+     5. aria-checked="perhaps" (invalid value) -> aria-valid-attr-value
+     6. role="widget" (not a real ARIA role)   -> aria-roles
+     7. role="button" carrying aria-checked    -> aria-allowed-attr
+     8. aria-hidden="true" on a container that
+        holds a focusable link                 -> aria-hidden-focus
+-->
+<nav class="topbar" aria-label="Main">
+  <a href="index.html">Home</a>
+  <a href="about.html">About us</a>
+  <a href="services.html">Services</a>
+  <a href="news.html">News</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main>
+  <h1>Services and pricing</h1>
+  <p>We keep it simple: catalogue parts at list price, engineering support at an hourly rate, and
+  free technical drawings.</p>
+
+  <h2>What we supply</h2>
+  <ul>
+    <div class="card">Bearings, all standard metric sizes</div>
+    <div class="card">Couplings, rigid and flexible</div>
+    <div class="card">Linear guides and carriages</div>
+  </ul>
+
+  <h2>Price list</h2>
+  <table id="spec-table">
+    <tr><th>Item</th><th>Unit price</th><th>Stock</th></tr>
+    <tr><td>Bearing 6204-2RS</td><td>&euro;4.10</td><td><span class="status-ok">In stock</span></td></tr>
+    <tr><td>Coupling L-095</td><td>&euro;18.75</td><td><span class="status-ok">In stock</span></td></tr>
+    <tr><td>Linear guide HGR20-500</td><td>&euro;61.00</td><td><span class="status-bad">Backorder</span></td></tr>
+  </table>
+
+  <table id="spec-table">
+    <tr><th>Service</th><th>Rate</th></tr>
+    <tr><td>Engineering support</td><td>&euro;95 / hour</td></tr>
+    <tr><td>Drawing conversion</td><td>&euro;45 / drawing</td></tr>
+  </table>
+
+  <h2>Configure your order</h2>
+  <div class="card">
+    <div role="checkbox">Add installation service</div>
+    <div role="checkbox" aria-checked="perhaps">Add extended warranty</div>
+    <div role="widget" aria-label="Quantity">Quantity</div>
+    <div role="button" aria-checked="true">Apply trade discount</div>
+    <div aria-hidden="true">
+      This row is hidden from assistive technology, but it still contains
+      <a href="contact.html">a link that a keyboard user can reach</a>.
+    </div>
+  </div>
+
+  <h2>Order</h2>
+  <a href="contact.html"><button class="btn">Request a quote</button></a>
+</main>
+
+<footer>
+  <p>Northwind Widgets BV &middot; Waalhaven 42, Rotterdam</p>
+</footer>
+</body>
+</html>
