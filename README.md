@@ -67,4 +67,4 @@ nothing); a **remediation library** with wrong-and-correct markup per axe rule
 and why each matters to a screen-reader user; a **CI gate** with baselines so
 accessibility does not regress; and the EAA/WCAG and manual-checks guides.
 
-→ **Accessibility Audit Kit + Statement Generator**: <!-- GUMROAD-LINK -->
+→ More developer tooling like this: **[duke5am.gumroad.com](https://duke5am.gumroad.com)** <!-- GUMROAD-LINK -->
