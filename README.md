@@ -66,4 +66,27 @@ nothing); a **remediation library** with wrong-and-correct markup per axe rule
 and why each matters to a screen-reader user; a **CI gate** with baselines so
 accessibility does not regress; and the EAA/WCAG and manual-checks guides.
 
+<!-- RELATED:START -->
+
+## Related tools
+
+- **[mv3-manifest-lint](https://github.com/duke5am/mv3-manifest-lint)** — Static linter for Chrome Manifest V3 extensions: the mistakes that get you rejected from the Web Store or break at runtime. 37 rules.
+  *(if you were searching for "chrome extension manifest v3 errors")*
+- **[openapi-breaking-change-lint](https://github.com/duke5am/openapi-breaking-change-lint)** — Diff two OpenAPI specs and classify every change as breaking, potentially breaking or compatible. CI gate plus API design lint, no dependencies.
+  *(if you were searching for "openapi breaking changes")*
+- **[schema-jsonld-validator](https://github.com/duke5am/schema-jsonld-validator)** — Validate JSON-LD structured data against the real schema.org vocabulary and Google's requirements, and warn on markup features Google has retired.
+  *(if you were searching for "json-ld validator")*
+- **[stripe-webhook-replay](https://github.com/duke5am/stripe-webhook-replay)** — Replay Stripe subscription webhooks at your local handler with real signatures: out-of-order delivery, dunning failures, duplicates and retries.
+  *(if you were searching for "replay stripe webhooks locally")*
+- **[vscode-extension-lint](https://github.com/duke5am/vscode-extension-lint)** — Static linter for a VS Code extension project: manifest, .vscodeignore and packaging mistakes that get you rejected or ship a broken extension.
+  *(if you were searching for "vscode extension publishing errors")*
+- **[webhook-signature-verify](https://github.com/duke5am/webhook-signature-verify)** — Verify Stripe, GitHub and Shopify webhook signatures correctly, plus race-free idempotency so a retried delivery can never execute twice.
+  *(if you were searching for "stripe webhook signature verification")*
+
+All 28 tools in this set, grouped by what they check: **[dev-tools-index](https://duke5am.github.io/dev-tools-index/)**
+
+If you arrived here searching for one of these, this is the tool: **wcag accessibility audit tool** · **axe-core crawler** · **accessibility statement generator** · **european accessibility act check**
+
+<!-- RELATED:END -->
+
 → More developer tooling like this: **[duke5am.gumroad.com](https://duke5am.gumroad.com)** <!-- GUMROAD-LINK -->
