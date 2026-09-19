@@ -1,5 +1,4 @@
-# a11y-audit
-
+# wcag-axe-crawler
 Crawl a site with **axe-core** and get an aggregated WCAG violation report — JSON
 and readable HTML. Free, MIT.
 
